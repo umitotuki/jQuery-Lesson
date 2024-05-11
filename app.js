@@ -1,9 +1,8 @@
-$(function (){
-  $('.box1').slideDown(5000,function (){
-    $('.box1').css({
-      'background-color': '#ffd900',
-      'width': '200px',
-      'height': '100px'
-    }).slideUp(5000);
+$(function(){
+  $('.box1').mouseover(function(){
+    $('.box1').addClass('box1-ext');
+  });
+  $('.box1').mouseout(function(){
+    $('.box1').removeClass('box1-ext');
   });
 });
